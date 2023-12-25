@@ -1,0 +1,12 @@
+﻿
+
+@using EntityLayer.Concrete
+@model List<Category>
+
+
+<ul class="simplefilter w3layouts agileits">
+    @foreach (var x in Model)
+    {
+        <li class="w3layouts agileits" data-filter="1">@x.CategoryName</li>
+    }
+</ul>
